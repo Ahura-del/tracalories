@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://kit.fontawesome.com/ab8710ce73.js" crossorigin="anonymous"></script>    <title>Document</title>
+   
+</head>
+<body>
+    <nav class="wrapper blue">
+        <div class="container">
+            <a href="#" class="brand-logo center">Tracalories</a>
+            <ul class="right">
+                <li>
+                    <a href="#" class="waves-effect waves-light btn blue lighten-3 clear-btn">Clear All</a>
+
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- card area -->
+    <div class="container">
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title">
+                    <h4 id="heading">Add/Edit Meal</h4>
+                </div>
+                <div class="row">
+                    <form class="col s12">
+                      <div class="row">
+                        <div class="input-field col s6">
+                          <input id="meal" type="text" class="validate" placeholder="Add Meal..." autocomplete="off">
+                          <label for="meal">Meal</label>
+                        </div>
+                        <div class="input-field col s6">
+                          <input id="calories" type="number" class="validate" placeholder="Add Calories..." autocomplete="off">
+                          <label for="calories">Calories</label>
+                        </div>
+                      </div>
+                      <button class="btn blue darken-3" id="add">
+                        <i class="fas fa-plus"></i>
+                        ADD MEAL
+                      </button>
+                      <button class="btn orange darken-3" id="edit">
+                        <i class="fas fa-edit"></i>
+                        EDIT MEAL
+                      </button>
+                      <button class="btn red darken-3" id="delete">
+                        <i class="fas fa-trash-alt"></i>
+                        DELETE MEAL
+                      </button>
+
+                      <button class="btn grey darken-3 right" id="back">
+                        <i class="fas fa-chevron-left"></i>
+                        BACK
+                      </button>
+                    </form>
+                  </div>
+            </div>
+        </div>
+
+        <!-- totla calories -->
+        <div class="center-align">
+            <h3>Total Calories : <span id="calori">0</span></h3>
+        </div>
+
+        <!-- list meal -->
+        <div>
+            <ol class="collection" id="meal-list">
+            </ol>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="build/app.bundle.js"></script>
+  </body>
+</html>
